@@ -1,0 +1,219 @@
+
+.header__burgerMenu {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url("images/burger_menu.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.5s;
+    z-index: 10;
+}
+
+.header__burgerMenu_active {
+    transform: rotate(0.25turn);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__switch {
+    width: 100px;
+    height: 40px;
+    background-color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    z-index: 5;
+   
+}
+
+.switch__circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: beige;
+    margin: 5px 10px;
+    transition: all 0.5s;
+    background-image:linear-gradient(62deg,#8ec5fc,#e0c3fc);
+}
+
+.switch__circle_active {
+    transform: translateX(50px);
+    background-image: linear-gradient(to top right, rgba(255, 196, 0, 0.99), rgba(241, 185, 5, 0.99), rgba(227, 174, 10, 0.99), rgba(212, 163, 14, 1), rgba(198, 152, 19, 1), rgb(184, 141, 24), rgb(192, 122, 31), rgb(199, 103, 39), rgb(207, 85, 46), rgb(215, 66, 53), rgb(222, 47, 61), rgb(230, 28, 68));
+    border: silver;
+}
+
+.header__mod {
+    font-size: 30px;
+    font-weight: 800;
+    z-index: 5;
+    font-family: cursive;
+    margin-top: 20px;
+}
+
+.header__menu {
+    margin-top: 0;
+    position: absolute;
+    width: 400px;
+    height: 105vh;
+    background-image:linear-gradient(62deg,#8ec5fc,#e0c3fc);
+    box-shadow: 0 0 10px black;
+    transition: opacity 0.5s;
+    z-index: 4;
+}
+
+.menu__list {
+    margin-top: 110px;
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    list-style-type: none;
+    line-height: 40px;
+    color: white;
+    
+}
+
+li {
+    transition: all 0.3s;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards__container{
+    display:flex;
+    flex-wrap:wrap;
+    -webkit-box-pack:center;
+    justify-content:center;
+    max-width:1350px;
+    margin:auto;
+    padding:0 15px
+}
+.card_start{
+width: 320px;
+    height: 300px;
+    background:linear-gradient(180deg,#08aeea,#2af598 43%,#fff 0,#fff);
+    margin: 20px 5px 0;
+    box-shadow: 0 0 30px brown;
+    border-radius: 5px;
+    transition: all 1s;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    z-index: 3;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+    font-family: cursive;
+}
+.card {
+    width: 320px;
+    height: 300px;
+    background:linear-gradient(180deg,#08aeea,#2af598 43%,#fff 0,#fff);
+    margin: 20px 5px 0;
+    box-shadow: 0 0 30px brown;
+    border-radius: 5px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 0 25px black;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: wheat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card__text {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    bottom: 5px;
+    font-family: cursive;
+}
+
+.photo__start {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 10px solid white;
+    display: block;
+    margin: 20px auto;
+
+}
+.card__image {
+    width: 320px;
+    height: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card__image:hover {
+    box-shadow: 0 0 25px black;
+}
+
+.menu_element {
+    z-index: 2;
+}
+
+.card__coupimg {
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transition: all 1s;
+}
+
+.card__coupimg:hover {
+    transform: rotate(0.25turn);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.button__play {
+    background-image: linear-gradient(to top right, rgba(255, 196, 0, 0.99), rgba(241, 185, 5, 0.99), rgba(227, 174, 10, 0.99), rgba(212, 163, 14, 1), rgba(198, 152, 19, 1), rgb(184, 141, 24), rgb(192, 122, 31), rgb(199, 103, 39), rgb(207, 85, 46), rgb(215, 66, 53), rgb(222, 47, 61), rgb(230, 28, 68));
+    width: 40%;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+    display: none;
+    border: none;
+}
+
+.card_no_active {
+    opacity: 0.2;
+    width: 320px;
+    height: 300px;
+}
